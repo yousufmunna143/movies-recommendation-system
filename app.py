@@ -30,7 +30,7 @@ def recommend(movie):
         movie_ratings.append((fetch_rating(movie_id)))
     return recommended_movies,recommended_movies_posters,movie_ratings
 
-st.title('movie recommender system')
+st.title('Movie Recommender System')
 
 
 selected_movie_name = st.selectbox(
