@@ -34,7 +34,7 @@ st.title('Movie Recommender System')
 
 
 selected_movie_name = st.selectbox(
-   "Select your favourite movie",
+   "Ready for movie magic? Pick one and unlock five personalized recommendations tailored just for you!",
    movies['title'].values,
    index=None,
 )
@@ -71,3 +71,8 @@ if st.button('Recommend'):
         st.text(names[4])
         st.image(posters[4])
         st.text("Rating:" + str(rating[4]))
+
+    st.text("Made with 💗 by Yousuf")
+    st.text("Connect with me on LinkedIn")
+    url = "https://www.linkedin.com/in/shaik-yousuf-a39566228/"
+    st.link_button("LinkedIn", url)
